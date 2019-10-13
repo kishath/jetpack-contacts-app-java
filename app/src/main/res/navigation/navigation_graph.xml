@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_graph"
+            app:startDestination="@id/peopleListFragment">
+
+    <fragment android:id="@+id/peopleListFragment"
+              android:name="com.kishathfernando.contactsappjava.fragments.PeopleListFragment"
+              android:label="All Contacts" tools:layout="@layout/fragment_peoples_list">
+        <action android:id="@+id/action_peopleListFragment_to_addPeopleFragment3"
+                app:destination="@id/addPeopleFragment3"/>
+        <action android:id="@+id/action_peopleListFragment_to_peopleDetailsFragment2"
+                app:destination="@id/peopleDetailsFragment2"/>
+    </fragment>
+    <fragment android:id="@+id/addPeopleFragment3"
+              android:name="com.kishathfernando.contactsappjava.fragments.AddPeopleFragment"
+              android:label="Add Contact" tools:layout="@layout/fragment_add_people"/>
+    <fragment android:id="@+id/peopleDetailsFragment2"
+              android:name="com.kishathfernando.contactsappjava.fragments.PeopleDetailsFragment"
+              android:label="Contact Detail"
+              tools:layout="@layout/fragment_people_details"/>
+</navigation>
